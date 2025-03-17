@@ -8,7 +8,7 @@ export default class LiveStreamController {
     try {
       const streaming = PlataformaFactory.criarTransmissao(plataforma);
       streaming.iniciarTransmissao();
-      return res.json({ message: `Transmissão iniciada na plataforma ${plataforma}!` });
+      return res.json({ message: `🔑 ${plataforma}: 🔓 Autorizando a aplicação!...` });
     } catch (error: any) {
       console.error(error);
       return res.status(400).json({ error: error.message });
